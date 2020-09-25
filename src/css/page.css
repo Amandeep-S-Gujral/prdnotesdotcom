@@ -1,0 +1,27 @@
+.hed{
+    text-align: left;
+    color: #052775;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+.txt{
+    text-align: justify;
+    font-size: larger;
+    line-height: 1.6;
+}
+
+.oli{
+    text-align: left;
+    font-size: larger;
+    line-height: 1.6;
+}
+
+.uli{
+    text-align: left;
+    font-size: larger;
+    line-height: 1.6;
+}

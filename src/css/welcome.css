@@ -1,0 +1,31 @@
+#landing {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkslategrey;
+}
+#landing div {
+  width: 300px;
+  margin: 7%;
+  text-align: justify;
+}
+#landing div h1 {
+  text-align: left;
+  color: #052775;
+}
+#landing img {
+  width: 100%;
+  margin: 7%;
+}
+
+@media only screen and (min-width: 600px) {
+  #landing {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #landing img {
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+}
