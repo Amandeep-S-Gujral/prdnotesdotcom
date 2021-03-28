@@ -1,0 +1,16 @@
+.display {
+  padding: 25% 0% 5% 5%;
+}
+.listLink{
+  text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+  .display {
+    padding: 7% 0% 2% 3%;
+  }
+  .listLink{
+    text-decoration: none;
+    width: 50vh;
+    display: inline-block; /*To prevent=> Div Anchor Clickable Even Outside of Div*/
+  }
+}

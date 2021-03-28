@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ReactGa from "react-ga";
 import NavBar from "./components/NavBar";
-import Welcome from "./components/Welcome";
+import './css/App.css'
 
 const App = () => {
   useEffect(() => {
@@ -11,14 +11,11 @@ const App = () => {
     ReactGa.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
-    <>
-      <div>
+    <div id='app'>
+      <div id='navDiv'>
         <NavBar />
-
-        {/* conditionally rendering welcome component on the basis of pathname */}
-        {window.location.pathname === "/" ? <Welcome /> : <></>}
       </div>
-    </>
+    </div>
   );
 };
 

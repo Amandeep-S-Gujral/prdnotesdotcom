@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered correctly 1`] = `
+<div>
+  <div
+    id="navbar"
+  >
+    <a
+      href="/"
+      id="home"
+    >
+      <div
+        id="logo"
+        style={
+          Object {
+            "backgroundColor": "white",
+            "margin": "10px",
+            "width": "140px",
+          }
+        }
+      >
+        <h3
+          style={
+            Object {
+              "color": "#052775",
+              "fontFamily": "arial",
+              "margin": "0px",
+              "padding": "5px",
+            }
+          }
+        >
+          PrdNotes.com
+        </h3>
+        <p
+          style={
+            Object {
+              "color": "#052775",
+              "fontFamily": "arial",
+              "fontSize": ".5em",
+              "margin": "0px",
+              "padding": "5px",
+              "textAlign": "right",
+            }
+          }
+        >
+          By A.D. Singh
+        </p>
+      </div>
+    </a>
+    <ul>
+      <li>
+        <a
+          className="link"
+          href="/business"
+        >
+          Business
+        </a>
+      </li>
+      <li>
+        <a
+          className="link"
+          href="/design"
+        >
+          Design
+        </a>
+      </li>
+      <li>
+        <a
+          className="link"
+          href="/technology"
+        >
+          Technology
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    id="landing"
+  >
+    <div>
+      <h1>
+        Compile and share product knowledge
+      </h1>
+      <p>
+        The notes are prepared by combining text, images, and videos available across the internet.
+      </p>
+      <p>
+        All the notes are classified into three different headings i.e.business, design, technology.
+      </p>
+      <p>
+        If you have any suggestions, write to us at
+         
+        <strong>
+          learn@prdnotes.com
+        </strong>
+      </p>
+    </div>
+    <img
+      alt="landing page pic by prdnotes.com"
+      src="https://ik.imagekit.io/prdnotes/Landing_page/Welcome_to_prdnotes.com.svg"
+    />
+  </div>
+</div>
+`;

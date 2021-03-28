@@ -1,0 +1,21 @@
+.replyBox{
+    margin-top: 2%;
+    background-color:lightgray;
+    width: 51vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.replyBox textarea{
+    width: 98%;
+    height: 50px;
+    margin: 2%;
+}
+
+.replyBox button{
+    margin: 0% 2% 2% 0%;
+    height: 30px;
+    font-weight: 700;
+    color:#052775
+}

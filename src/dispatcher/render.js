@@ -3,7 +3,7 @@ import React from "react";
 let render = (array) => {
   let compArr = [];
 
-  array.map((obj) => {
+  array.forEach((obj) => {
     //rendering headings in h1 tag
     if (obj.id.includes("h")) {
       compArr.push(
@@ -15,7 +15,7 @@ let render = (array) => {
     //render text in p tag
     else if (obj.id.includes("t")) {
       compArr.push(
-        <p key={obj.key} className="txt">
+        <p key={obj.id} className="txt">
           {obj.cnt}
         </p>
       );
@@ -36,8 +36,8 @@ let render = (array) => {
       let arr = obj.cnt.split("\n");
       compArr.push(
         <ol key={obj.id} className="oli">
-          {arr.map((ele) => (
-            <li>{ele}</li>
+          {arr.forEach((ele, index) => (
+            <li key = {index}>{ele}</li>
           ))}
         </ol>
       );
@@ -47,8 +47,8 @@ let render = (array) => {
       let arr = obj.cnt.split("\n");
       compArr.push(
         <ul key={obj.id} className="uli">
-          {arr.map((ele) => (
-            <li>{ele}</li>
+          {arr.map((ele, index) => (
+            <li key = {index}>{ele}</li>
           ))}
         </ul>
       );
@@ -60,11 +60,20 @@ let render = (array) => {
           key={obj.id}
           title ={obj.id}
           className="vid"
-          width="420"
-          height="315"
           src={obj.cnt}
         ></iframe>
       );
+    }
+     //render links
+     else if(obj.id.includes('l')) {
+      let arr = obj.cnt.split("\n")
+      compArr.push(
+        <ul key={obj.id} className="lnk">
+        {arr.map((ele) => (
+          <li><a href={ele}>{ele}</a></li>
+        ))}
+      </ul>
+      )
     }
   });
   return compArr;

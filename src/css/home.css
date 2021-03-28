@@ -1,0 +1,67 @@
+#home {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkslategrey;
+}
+.sec {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec div {
+  margin: 0% 5% 0% 5%;
+}
+#sec1{
+  padding-top: 150px;
+}
+.sec div h1 {
+  text-align: left;
+  color: #052775;
+}
+.sec div p {
+  line-height: 1.6;
+  text-align: justify;
+}
+.sec img {
+  margin: 0% 5% 0% 5%;
+  width: 75vw;
+  padding: 5%;
+}
+#subEmail {
+  width: 300px;
+  height: 30px;
+  font-weight: 700;
+  color:#052775;
+  border-color: #052775;
+  border-width: 2px;
+}
+#subBtn {
+  background-color: #052775;
+  color: #fefb7a;
+  width: 300px;
+  font-size: medium;
+  text-align: left;
+  padding: 10px;
+}
+#subBtn span {
+  font-size: x-large;
+  font-weight: 700;
+}
+@media only screen and (min-width: 600px) {
+  .sec {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+  }
+  #sec1{
+    padding: 0px;
+  }
+  .sec div {
+    margin: 0% 5% 0% 5%;
+    text-align: justify;
+    width: 400px;
+  }
+  .sec img {
+    width: 35vw;
+    margin: 5%;
+  }
+}

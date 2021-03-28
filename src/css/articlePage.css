@@ -1,0 +1,75 @@
+.article{
+    width: 90vw;
+}
+.hed{
+    text-align: left;
+    color: #052775;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+.txt{
+    text-align: justify;
+    font-size: larger;
+    line-height: 1.6;
+}
+
+.oli{
+    text-align: left;
+    font-size: larger;
+    line-height: 1.6;
+}
+
+.uli{
+    text-align: left;
+    font-size: larger;
+    line-height: 1.6;
+}
+
+.lnk{
+    list-style: none;
+    text-align: left;
+    padding: 0%;
+}
+
+.lnk li{
+    margin-bottom: 1%;
+}
+
+.secHed{
+    text-decoration: none;
+    font-weight: 600;
+    color: #052775;
+}
+
+.vid{
+    width: vw;
+    height: 75vw;
+}
+
+.share{
+    color: #052775;
+    background-color: lightgrey;
+    padding: 1% 0% 5% 3%;
+    width: 90vw;
+}
+
+@media only screen and (min-width: 600px) {
+    /*for desktop*/
+.article{
+    width: 50vw;
+}
+.vid{
+    width: 420px;
+    height: 315px;
+}
+.share{
+    color: #052775;
+    background-color: lightgrey;
+    padding: 0% 0% 1% 1%;
+    width: 50vw
+}
+}

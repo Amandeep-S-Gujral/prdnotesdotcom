@@ -1,0 +1,103 @@
+.commentBox{
+    margin-top: 5%;
+    background-color: #FEFB7A;
+    width: 92vw
+}
+
+.commentBox textarea{
+    margin: 2%;
+    width: 94%;
+    height: 80px;
+}
+
+.commentBox div{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.commentBox div p{
+    margin: 0px;
+    color: #052775;
+    font-weight: 600;
+}
+
+.commentBox div div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.canclePost{
+    color: grey;
+    text-decoration: underline;
+}
+
+.canclePost:hover{
+    cursor: pointer;
+}
+
+.submitPost{
+    margin-left: 10px;
+    height: 30px;
+    font-weight: 700;
+    color:#052775
+}
+
+@media only screen and (min-width: 600px){
+    .commentBox{
+        margin-top: 2%;
+        background-color: #FEFB7A;
+        width: 51vw
+    }
+
+    .commentBox textarea{
+        margin: 2%;
+        width: 94%;
+        height: 60px;
+        resize: none;
+    }
+
+    .commentBox div{
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-bottom: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .commentBox div p{
+        margin: 0px;
+        color: #052775;
+        font-weight: 600;
+    }
+
+    .commentBox div div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .submitPost{
+        margin-left: 10px;
+        height: 30px;
+        font-weight: 700;
+        color:#052775
+    }
+
+    .submitPost:hover{
+        cursor: pointer;
+    }
+
+    .canclePost{
+        color: grey;
+        text-decoration: underline;
+    }
+    
+    .canclePost:hover{
+        cursor: pointer;
+    }
+}

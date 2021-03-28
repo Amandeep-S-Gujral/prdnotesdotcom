@@ -1,0 +1,60 @@
+@media only screen and (min-width: 600px) {
+  .comment {
+    padding-left: 2%;
+    display: flex;
+    margin-top: 2%;
+    width: 49vw;
+    border-top: solid 1px lightgray;
+    padding-top: 2%;
+  }
+
+  .reply {
+    padding-left: 6%;
+    display: flex;
+    padding-top: 2%;
+    width: 51vw;
+  }
+
+  .userPic {
+    width: 9%;
+    height: 9%;
+  }
+
+  .comment div {
+    margin: 0px;
+    width: 35vw;
+    padding: 0% 3% 0% 3%;
+  }
+
+  .reply div {
+    margin: 0px;
+    width: 35vw;
+    padding: 0% 3% 0% 3%;
+  }
+
+  .userName {
+    display: flex;
+    align-items: baseline;
+    margin: 0px;
+    color: #052775;
+    font-weight: 600;
+  }
+
+  .userComment {
+    margin: 0px;
+    color: darkslategrey;
+  }
+
+  .commentTime {
+    margin: 10px;
+    color: grey;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .userReply {
+    height: 30px;
+    font-weight: 700;
+    color: #052775;
+  }
+}

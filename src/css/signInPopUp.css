@@ -1,0 +1,44 @@
+#signInPopUp{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(95, 95, 92, 0.5);
+    justify-content: center;
+    align-items: center;
+    color: #052775;
+}
+
+#signInPopUp div{
+    background-color: white;
+    width: 300px;
+    padding: 2%;
+}
+
+#signInPopUp div header{
+    display: flex;
+}
+
+.closeBtn{
+    height: fit-content;
+}
+
+.signInDiv{
+    max-width: 290px;
+}
+
+.signInBtn{
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 50px;
+    font-size: larger;
+    color: #052775;
+    font-weight: 500;
+}
+
+.signInBtn img{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
