@@ -1,4 +1,4 @@
-const cmtSorter = (arr) => {
+const commentSorter = (arr) => {
 
     //get the arry of comments where typ===comment
     let cmtArr = arr.filter(obj => obj.typ === 'comment')
@@ -8,7 +8,7 @@ const cmtSorter = (arr) => {
     let finalArr = []
 
     //club the reply with their respective comments
-    cmtArr.map(obj => sortArr.map(obj1 => {
+    cmtArr.forEach(obj => sortArr.forEach(obj1 => {
         if(obj.lnk === obj1.lnk){
             finalArr.push(obj1)
         }
@@ -17,4 +17,4 @@ const cmtSorter = (arr) => {
     return finalArr
 }
 
-export default cmtSorter
+export default commentSorter

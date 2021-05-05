@@ -1,14 +1,38 @@
-.display {
+.articleDisplay{
+  padding: 30% 0% 5% 5%;
+}
+
+.bookDisplay {
+  padding: 25% 0% 5% 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loading{
   padding: 25% 0% 5% 5%;
 }
-.listLink{
+
+.listLink {
   text-decoration: none;
 }
 @media only screen and (min-width: 600px) {
-  .display {
+
+  .articleDisplay{
     padding: 7% 0% 2% 3%;
   }
-  .listLink{
+
+  .bookDisplay {
+    padding: 7% 0% 2% 3%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+  }
+
+  .loading{
+    padding: 7% 0% 2% 3%;
+  }
+
+  .listLink {
     text-decoration: none;
     width: 50vh;
     display: inline-block; /*To prevent=> Div Anchor Clickable Even Outside of Div*/

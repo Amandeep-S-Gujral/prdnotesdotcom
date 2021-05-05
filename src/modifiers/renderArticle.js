@@ -1,7 +1,7 @@
 import React from "react";
 
 let render = (array) => {
-  let compArr = [];
+  let compArr = []; //react dom array which will be retuned as output of the function
 
   array.forEach((obj) => {
     //rendering headings in h1 tag

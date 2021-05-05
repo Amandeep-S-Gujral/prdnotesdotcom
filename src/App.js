@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ReactGa from "react-ga";
-import NavBar from "./components/NavBar";
+
+import NavBar from "./components/general/NavBar";
 import './css/App.css'
 
 const App = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import { initialize } from 'react-ga'
 import renderer from 'react-test-renderer'
 
 import App from './App'

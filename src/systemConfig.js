@@ -1,6 +1,9 @@
 let navList = [
-    'articles',
+    'article',
+    'book'
 ]
+
+let baseUrl = 'https://us-central1-prdnotesdotcom.cloudfunctions.net/app/api'
 
 let signInMethods = [
     {
@@ -21,4 +24,4 @@ let signInMethods = [
     }
 ]
 
-export { navList, signInMethods }
+export { navList, baseUrl, signInMethods }

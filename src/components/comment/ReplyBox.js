@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import Cookies from 'universal-cookie'
 
-import postCmt from '../../dispatcher/postComment'
+import {Comment} from '../../dispatcher/comment'
 
 import '../../css/replyBox.css'
 
-let ReplyBox = ({cid, rid, userToken, setRbState, cmtArr, setCmt}) => {
+let ReplyBox = ({cid, rid, setRbState, list, setList}) => {
 
     let [bdy, setBdy] = useState()
 
@@ -14,19 +15,16 @@ let ReplyBox = ({cid, rid, userToken, setRbState, cmtArr, setCmt}) => {
 
     let handlePost = async () =>{
 
+        const cookies = new Cookies()
         //throw alert is user token is null (i.e. user is not signedIn)
-        if(userToken === null){
+        if(cookies.get('authToken') === undefined){
             return window.alert('Please SignIn/SignUp!')
         }
         
         //create reqBody before passing to POST API
-        const post = {
-            bdy: bdy,
-            cid: cid,
-            typ: 'reply',
-            lnk: rid      
-        }
-        await postCmt(post, userToken, cmtArr, setCmt)
+        const authToken = cookies.get('authToken')
+        const comment = new Comment('POST', cid, 'reply', bdy, rid, authToken)
+        comment.postComment(list, setList)
         setBdy('')
         setRbState(false)
 

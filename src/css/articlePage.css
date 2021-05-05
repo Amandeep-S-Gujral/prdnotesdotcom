@@ -1,75 +1,83 @@
-.article{
-    width: 90vw;
-}
-.hed{
-    text-align: left;
-    color: #052775;
+.display {
+  padding: 30% 0% 0% 5%;
 }
 
-.img{
-    width: 100%;
-    height: auto;
+.article {
+  width: 90vw;
+}
+.hed {
+  text-align: left;
+  color: #052775;
 }
 
-.txt{
-    text-align: justify;
-    font-size: larger;
-    line-height: 1.6;
+.img {
+  width: 100%;
+  height: auto;
 }
 
-.oli{
-    text-align: left;
-    font-size: larger;
-    line-height: 1.6;
+.txt {
+  text-align: justify;
+  font-size: larger;
+  line-height: 1.6;
 }
 
-.uli{
-    text-align: left;
-    font-size: larger;
-    line-height: 1.6;
+.oli {
+  text-align: left;
+  font-size: larger;
+  line-height: 1.6;
 }
 
-.lnk{
-    list-style: none;
-    text-align: left;
-    padding: 0%;
+.uli {
+  text-align: left;
+  font-size: larger;
+  line-height: 1.6;
 }
 
-.lnk li{
-    margin-bottom: 1%;
+.lnk {
+  list-style: none;
+  text-align: left;
+  padding: 0%;
 }
 
-.secHed{
-    text-decoration: none;
-    font-weight: 600;
-    color: #052775;
+.lnk li {
+  margin-bottom: 1%;
 }
 
-.vid{
-    width: vw;
-    height: 75vw;
+.secHed {
+  text-decoration: none;
+  font-weight: 600;
+  color: #052775;
 }
 
-.share{
-    color: #052775;
-    background-color: lightgrey;
-    padding: 1% 0% 5% 3%;
-    width: 90vw;
+.vid {
+  width: vw;
+  height: 75vw;
+}
+
+.share {
+  color: #052775;
+  background-color: lightgrey;
+  padding: 1% 0% 5% 3%;
+  width: 90vw;
 }
 
 @media only screen and (min-width: 600px) {
-    /*for desktop*/
-.article{
+  /*for desktop*/
+  .display {
+    padding: 7% 0% 2% 3%;
+  }
+
+  .article {
     width: 50vw;
-}
-.vid{
+  }
+  .vid {
     width: 420px;
     height: 315px;
-}
-.share{
+  }
+  .share {
     color: #052775;
     background-color: lightgrey;
     padding: 0% 0% 1% 1%;
-    width: 50vw
-}
+    width: 50vw;
+  }
 }

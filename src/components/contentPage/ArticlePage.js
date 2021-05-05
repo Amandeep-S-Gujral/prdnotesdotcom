@@ -1,29 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Share from '../Share'
-import Meta from '../Meta'
+
+import Share from '../general/Share'
+import Meta from '../general/Meta'
 import CommentBox from '../comment/CommentBox'
 
-import render from "../../dispatcher/render";
-import getContent from "../../dispatcher/getContent"
+import renderArticle from "../../modifiers/renderArticle";
+import {Content} from "../../dispatcher/content"
 
 import "../../css/articlePage.css";
 
 // import getContent from '../../dispatcher'
 
-let ArticlePage = ({userToken}) => {
-  let { cid } = useParams();
-  let [data, setData] = useState()
+let ArticlePage = () => {
 
-  //get json data to render and save in state named 'data'
+  let { cid } = useParams();
+  let [data, setData] = useState() //article body is stored
+
+  //create instance of Content class to GET the data
+  const content = new Content('GET', 'articles', cid)
+
+  //content dispatcher is called to update the state data
   useEffect(() => {
-    const fetchData = async () => await getContent(cid, 'articles', setData)
-    fetchData()
+    content.getContentBdy(setData)
   }, [cid])
 
   return (
     <div className='display'>
-
+     
       {/*show loading if data is undefined */}
       {!data && <p>Loading...</p>}
 
@@ -31,7 +35,7 @@ let ArticlePage = ({userToken}) => {
       {data && <Meta obj={data[data.length - 1]} />}
 
       {/* article */}
-      <div className="article">{data && render(data)}</div>
+      <div className="article">{data && renderArticle(data)}</div>
 
       {/*render share bar for the page */}
       {data && <div className='share'>
@@ -40,7 +44,7 @@ let ArticlePage = ({userToken}) => {
       </div>}
 
       {/*render comment box for the page */}
-      {data && <CommentBox cid={cid} userToken={userToken} />}
+      {data && <CommentBox cid={cid} />}
 
     </div>
   );

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-import unixToUtc from '../../dispatcher/unixToUtc'
+import unixToUtc from '../../modifiers/unixToUtc'
 import ReplyBox from './ReplyBox'
 
 import '../../css/commentView.css'
 
-const CommentView = ({ cmt, cid, rid, userToken, cmtArr, setCmt }) => {
+const CommentView = ({ cmt, cid, list, setList }) => {
 
     const [rbState, setRbState] = useState(false) //reply box state
 
@@ -29,7 +29,7 @@ const CommentView = ({ cmt, cid, rid, userToken, cmtArr, setCmt }) => {
             </div>
 
             {/*render reply box if typ===comment & replyBoxState===true */}
-            {cmt.typ === 'comment' && rbState && <ReplyBox userToken = {userToken} cid={cid} rid={rid} setRbState={setRbState} cmtArr={cmtArr} setCmt={setCmt} />}
+            {cmt.typ === 'comment' && rbState && <ReplyBox cid={cid} rid={cmt.rid} setRbState={setRbState} list={list} setList={setList} />}
         </div>
     )
 }

@@ -9,7 +9,7 @@ let SectionOne = () => {
     setData({ ...data, [e.target.name]: e.target.value })
     console.log(data)
   }
-  let handleClick = (e) => {
+  let handleClick = () => {
     setRes('')
     if (data.email !== undefined) {
       let sendData = { ...data, subscribe: true }

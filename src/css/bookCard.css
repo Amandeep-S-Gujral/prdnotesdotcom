@@ -1,0 +1,51 @@
+.bookCard {
+  margin-top: 10%;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  width: 90vw;
+}
+
+.bookCard img {
+  padding: 5%;
+  width: 100px;
+  height: Auto;
+}
+
+.bookCard div {
+  background-color: #fefb7a;
+  padding: 2%;
+  text-align: left;
+}
+
+.bookCard div p {
+  font-weight: 600;
+  word-wrap: break-word;
+  color: #052775;
+}
+
+@media only screen and (min-width: 600px) {
+  .bookCard {
+    margin: 5%;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    width: 22vw;
+  }
+
+  .bookCard img {
+    padding: 5%;
+    width: 100px;
+    height: Auto;
+  }
+
+  .bookCard div {
+    background-color: #fefb7a;
+    padding: 5%;
+    text-align: left;
+  }
+
+  .bookCard div p {
+    font-weight: 600;
+    word-wrap: break-word;
+    color: #052775;
+  }
+}

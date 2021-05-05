@@ -1,104 +1,204 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`rendered correctly 1`] = `
-<div>
+<div
+  id="app"
+>
   <div
-    id="navbar"
+    id="navDiv"
   >
-    <a
-      href="/"
+    <div
+      id="navbar"
+    >
+      <div
+        id="navLnk"
+      >
+        <a
+          href="/"
+          id="home"
+        >
+          <div
+            id="logo"
+            style={
+              Object {
+                "backgroundColor": "white",
+                "margin": "10px",
+                "width": "140px",
+              }
+            }
+          >
+            <h3
+              style={
+                Object {
+                  "color": "#052775",
+                  "fontFamily": "arial",
+                  "margin": "0px",
+                  "padding": "5px",
+                }
+              }
+            >
+              PrdNotes.com
+            </h3>
+            <p
+              style={
+                Object {
+                  "color": "#052775",
+                  "fontFamily": "arial",
+                  "fontSize": ".5em",
+                  "margin": "0px",
+                  "padding": "5px",
+                  "textAlign": "right",
+                }
+              }
+            >
+              By A.D. Singh
+            </p>
+          </div>
+        </a>
+        <ul>
+          <li>
+            <a
+              className="link"
+              href="/article"
+              onClick={[Function]}
+            >
+              Articles
+            </a>
+          </li>
+          <li>
+            <a
+              className="link"
+              href="/book"
+              onClick={[Function]}
+            >
+              Books
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        id="userMaster"
+      >
+        <button
+          className="signIn"
+          onClick={[Function]}
+        >
+          SignIn/SignUp
+        </button>
+      </div>
+    </div>
+    <div
       id="home"
     >
       <div
-        id="logo"
-        style={
-          Object {
-            "backgroundColor": "white",
-            "margin": "10px",
-            "width": "140px",
-          }
-        }
+        className="sec"
+        id="sec1"
       >
-        <h3
-          style={
-            Object {
-              "color": "#052775",
-              "fontFamily": "arial",
-              "margin": "0px",
-              "padding": "5px",
-            }
-          }
-        >
-          PrdNotes.com
-        </h3>
-        <p
-          style={
-            Object {
-              "color": "#052775",
-              "fontFamily": "arial",
-              "fontSize": ".5em",
-              "margin": "0px",
-              "padding": "5px",
-              "textAlign": "right",
-            }
-          }
-        >
-          By A.D. Singh
-        </p>
+        <div>
+          <h1>
+            Compile and share product knowledge
+          </h1>
+          <p>
+            We compile and share knowledge on the domain of product management spread across internet for you.
+          </p>
+          <input
+            id="subEmail"
+            name="email"
+            onChange={[Function]}
+            placeholder="Email address e.g. xyz@gmail.com"
+            type="email"
+          />
+          <br />
+          <label />
+          <br />
+          <button
+            id="subBtn"
+            onClick={[Function]}
+          >
+            Get access to 
+            <br />
+            latest content on
+            <br />
+             Product Management 
+            <br />
+            <span
+              id="subNow"
+            >
+              Subscribe Now!
+            </span>
+          </button>
+          <br />
+        </div>
+        <img
+          alt="product management illustration by prdnotes.com"
+          src="https://ik.imagekit.io/prdnotes/Landing_page/Asset_6.png"
+        />
       </div>
-    </a>
-    <ul>
-      <li>
-        <a
-          className="link"
-          href="/business"
-        >
-          Business
-        </a>
-      </li>
-      <li>
-        <a
-          className="link"
-          href="/design"
-        >
-          Design
-        </a>
-      </li>
-      <li>
-        <a
-          className="link"
-          href="/technology"
-        >
-          Technology
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    id="landing"
-  >
-    <div>
-      <h1>
-        Compile and share product knowledge
-      </h1>
-      <p>
-        The notes are prepared by combining text, images, and videos available across the internet.
-      </p>
-      <p>
-        All the notes are classified into three different headings i.e.business, design, technology.
-      </p>
-      <p>
-        If you have any suggestions, write to us at
-         
-        <strong>
-          learn@prdnotes.com
-        </strong>
-      </p>
+      <div
+        className="sec"
+      >
+        <div>
+          <h1>
+            What is product management?
+          </h1>
+          <p>
+            Product management is an organizational function which administers each phase of product lifecycle. From development to introduction, growth, maturity and decline. To make the magic happen, a product manager ensures cohesiveness between business, design and technology to solve complex customer problems.
+          </p>
+          <p>
+            A Product manager (PM) does not have direct authority over a lot of things to make their product successful - from user and data research through design and development to marketing, sales, and support. They lead teams without authority by helping them envision the greatness of what is being built and how each participant contributes to its success.
+          </p>
+        </div>
+        <img
+          alt="product management venn diagram by prdnotes.com"
+          src="https://ik.imagekit.io/prdnotes/Landing_page/Asset_9.png"
+        />
+      </div>
+      <div
+        className="sec"
+      >
+        <div>
+          <h1>
+            Contact us
+          </h1>
+          <form
+            id="contactForm"
+            onSubmit={[Function]}
+          >
+            <label>
+              Email
+              <br />
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="xyz@gmail.com"
+                type="email"
+              />
+            </label>
+            <br />
+            <br />
+            <label>
+              Message
+              <br />
+              <textarea
+                name="msg"
+                onChange={[Function]}
+                placeholder="share your feedback, suggestion & comments"
+              />
+            </label>
+            <br />
+            <input
+              type="submit"
+              value="Submit"
+            />
+            <label />
+          </form>
+        </div>
+        <img
+          alt="contact us illustration by prdnotes.com"
+          src="https://ik.imagekit.io/prdnotes/Landing_page/Asset_8.png"
+        />
+      </div>
     </div>
-    <img
-      alt="landing page pic by prdnotes.com"
-      src="https://ik.imagekit.io/prdnotes/Landing_page/Welcome_to_prdnotes.com.svg"
-    />
   </div>
 </div>
 `;
