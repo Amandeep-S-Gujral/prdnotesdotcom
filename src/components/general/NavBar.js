@@ -35,9 +35,6 @@ let NavBar = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link className='link'>Privacy Policy</Link>
-              </li>
             </ul>
           </div>
           <UserDetails setState={setSignInPopUpState} />
@@ -54,8 +51,6 @@ let NavBar = () => {
 
           {/* navigation bar route */}
           <Route path={`/:typ`} component={ContentList} />
-
-          <Route path="/policy" component={PrivacyPolicy} />
 
           {/* 404 page route */}
           <Route path="/*" component={NoMatch} />
