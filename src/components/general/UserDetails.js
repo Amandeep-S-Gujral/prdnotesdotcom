@@ -19,8 +19,8 @@ const UserDetails = ({ setState }) => {
         //logout user
         auth.signOut()
             .then(() => {
-                cookies.remove('prdUser', {path:'/'})
-                cookies.remove('authToken', {path: '/'})
+                cookies.remove('prdUser', {path:'/', secure:true})
+                cookies.remove('authToken', {path: '/', secure:true})
                 window.location.reload()
                 return
             })

@@ -14,7 +14,9 @@ export class Content {
             method: this.method,
             headers: {
                 "content-type": "application/json",
-            }
+            },
+            credentials: 'include',
+            mode:'cors'
         }
 
         fetch(`${baseUrl}/content/${this.typ}`, req)
@@ -35,7 +37,9 @@ export class Content {
             method: this.method,
             headers: {
                 "content-type": "application/json"
-            }
+            },
+            credentials:'include',
+            mode:'cors'
         }
 
         fetch(`${baseUrl}/content/${this.typ}/?cid=${this.cid}`, req)

@@ -18,7 +18,9 @@ export class Comment {
             method: this.method,
             headers: {
                 "content-type": "application/json",
-            }
+            },
+            credentials: 'include',
+            mode: 'cors'     
         }
 
         fetch(`${baseUrl}/comment/?cid=${this.cid}`, req)
@@ -46,6 +48,7 @@ export class Comment {
         const req = {
             method: this.method,
             headers: {
+                authorization: this.tkn,
                 "content-type": "application/json"
             },
             credentials:'include',

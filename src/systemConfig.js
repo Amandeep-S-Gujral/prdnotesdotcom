@@ -5,6 +5,8 @@ let navList = [
 
 let baseUrl = 'https://us-central1-prdnotesdotcom.cloudfunctions.net/app/api'
 
+// let baseUrl = 'http://localhost:5001/prdnotesdotcom/us-central1/app/api'
+
 let signInMethods = [
     {
         method: 'google',
