@@ -8,7 +8,7 @@ import ContentList from "../contentList/ContentList";
 import UserDetails from "./UserDetails"
 import SignInPopUp from "./SignInPopUp";
 import NoMatch from './NoMatch'
-import PrivacyPolicy from './PrivacyPolicy'
+import WebPolicy from '../homeComponents/WebPolicy'
 
 import "../../css/navbar.css";
 
@@ -48,6 +48,10 @@ let NavBar = () => {
 
           {/* home page route */}
           <Route exact path="/" component={Home} />
+
+          {/*Footer routes */}
+          <Route exact path="/privacy-policy" component={WebPolicy} />
+          <Route exact path="/terms-of-use" component={WebPolicy} />
 
           {/* navigation bar route */}
           <Route path={`/:typ`} component={ContentList} />

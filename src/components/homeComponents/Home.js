@@ -3,6 +3,8 @@ import HomeMeta from './HomeMeta'
 import SectionOne from './SectionOne'
 import SectionTwo from './SectionTwo'
 import SectionThree from './SectionThree'
+import Footer from './Footer'
+
 import "../../css/home.css";
 
 let Welcome = () => {
@@ -19,6 +21,8 @@ let Welcome = () => {
 
       {/*contact us section of home page */}
       <SectionThree />
+
+      <Footer />
 
     </div>
   );

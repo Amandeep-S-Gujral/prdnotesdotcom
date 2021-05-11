@@ -1,0 +1,16 @@
+.policyDisplay {
+  background-color: #f0f0f0;
+  width: 90%;
+  padding: 30% 5% 2% 5%;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 600px) {
+  .policyDisplay {
+    background-color: #f0f0f0;
+    width: 70%;
+    margin-left: 15%;
+    padding: 7% 2% 2% 2%;
+    text-align: justify;
+  }
+}
