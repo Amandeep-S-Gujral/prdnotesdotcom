@@ -1,8 +1,9 @@
 #userMaster {
     display: flex;
     flex-wrap: wrap;
-    width: 30vw;
+    min-width: 300px;
     align-items: center;
+    padding: 10px;
   }
   
   #userDetail {

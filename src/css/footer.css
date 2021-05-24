@@ -2,7 +2,7 @@
     margin-top: 5%;
     width: 100%;
     height: 50px;
-    background-color: #FEFB7A;
+    background-color: whitesmoke;
 }
 
 .footer ul{
@@ -17,7 +17,7 @@
 
 .footerLink {
     text-decoration: underline;
-    color: #052775;
+    color: grey;
   }
   
   .footerLink:focus {

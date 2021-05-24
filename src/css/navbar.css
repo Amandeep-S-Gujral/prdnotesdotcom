@@ -4,13 +4,13 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #fefb7a;
+  background-color:white;
+  box-shadow: 0px 5px 5px grey;
   width: 100vw;
 }
 #navLnk {
   display: flex;
   flex-wrap: wrap;
-  background-color: #fefb7a;
   align-items: center;
 }
 #home {
@@ -25,7 +25,7 @@
 }
 
 #navLnk ul li {
-  padding: 10px;
+  padding: 10px 0px 10px 2vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
