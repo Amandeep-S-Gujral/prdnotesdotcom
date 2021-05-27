@@ -35,6 +35,9 @@ let NavBar = () => {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a className="link"href='https://forms.gle/vG3r8vpLoD1qh7PbA' target='_blank'>Feedback Form</a>
+              </li>
             </ul>
           </div>
           <UserDetails setState={setSignInPopUpState} />
