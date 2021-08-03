@@ -1,43 +1,58 @@
 #navbar {
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background-color:white;
-  box-shadow: 0px 5px 5px grey;
-  width: 100vw;
-}
-#navLnk {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-#home {
-  text-decoration: none;
+  background-color: white;
+  display: block;
 }
 
-#navLnk ul {
+.hamburger{
+  display: block;
+  margin-right: 10px;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#navList {
+  position: fixed;
+  width: 97%;
+  background-color: white;
   list-style-type: none;
   padding: 0px;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
+  box-shadow: 0px 3px 4px lightgray;
 }
 
-#navLnk ul li {
-  padding: 10px 0px 10px 2vw;
+#navList li {
+  padding: 15px 10px 15px 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.link {
-  text-decoration: underline;
-  font-weight: 600;
-  color: #052775;
-}
+@media only screen and (min-width: 600px) {
+  #navbar {
+    background-color: white;
+    display: block;
+  }
 
-.link:focus {
-  text-decoration: underline;
-  font-weight: 600;
-  color: #052775;
-}
+  .hamburger{
+    display: none;
+  }
 
+  #navList {
+    position: relative;
+    width: auto;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: none;
+  }
+
+  #navList li {
+    padding: 10px 0px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

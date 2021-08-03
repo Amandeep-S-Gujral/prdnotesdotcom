@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom'
 // import {render} from 'react-snapshot'
 import './index.css';
 import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
 
 const rootElement = document.getElementById("root");
 
 if (rootElement.hasChildNodes()) {
-  ReactDOM.hydrate(<App />, rootElement);
+  ReactDOM.hydrate(
+  
+  <Router><App /></Router>
+  , rootElement);
 } else {
   ReactDOM.render(<App />, rootElement);
 }

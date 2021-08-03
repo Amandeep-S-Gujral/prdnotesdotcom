@@ -18,41 +18,50 @@ exports[`rendered correctly 1`] = `
           id="home"
         >
           <div
-            id="logo"
             style={
               Object {
-                "backgroundColor": "white",
-                "margin": "10px",
-                "width": "140px",
+                "background": "#FEFB7A",
+                "marginLeft": "10px",
+                "padding": "5px",
               }
             }
           >
-            <h3
+            <div
+              id="logo"
               style={
                 Object {
-                  "color": "#052775",
-                  "fontFamily": "arial",
-                  "margin": "0px",
-                  "padding": "5px",
+                  "backgroundColor": "white",
+                  "width": "140px",
                 }
               }
             >
-              PrdNotes.com
-            </h3>
-            <p
-              style={
-                Object {
-                  "color": "#052775",
-                  "fontFamily": "arial",
-                  "fontSize": ".5em",
-                  "margin": "0px",
-                  "padding": "5px",
-                  "textAlign": "right",
+              <h3
+                style={
+                  Object {
+                    "color": "#052775",
+                    "fontFamily": "arial",
+                    "margin": "0px",
+                    "padding": "5px",
+                  }
                 }
-              }
-            >
-              By A.D. Singh
-            </p>
+              >
+                PrdNotes.com
+              </h3>
+              <p
+                style={
+                  Object {
+                    "color": "#052775",
+                    "fontFamily": "arial",
+                    "fontSize": ".5em",
+                    "margin": "0px",
+                    "padding": "5px",
+                    "textAlign": "right",
+                  }
+                }
+              >
+                By A.D. Singh
+              </p>
+            </div>
           </div>
         </a>
         <ul>
@@ -72,6 +81,15 @@ exports[`rendered correctly 1`] = `
               onClick={[Function]}
             >
               Books
+            </a>
+          </li>
+          <li>
+            <a
+              className="link"
+              href="https://forms.gle/vG3r8vpLoD1qh7PbA"
+              target="_blank"
+            >
+              Feedback Form
             </a>
           </li>
         </ul>
@@ -197,6 +215,30 @@ exports[`rendered correctly 1`] = `
           alt="contact us illustration by prdnotes.com"
           src="https://ik.imagekit.io/prdnotes/Landing_page/Asset_8.png"
         />
+      </div>
+      <div
+        className="footer"
+      >
+        <ul>
+          <li>
+            <a
+              className="footerLink"
+              href="/privacy-policy"
+              onClick={[Function]}
+            >
+              privacy-policy
+            </a>
+          </li>
+          <li>
+            <a
+              className="footerLink"
+              href="/terms-of-use"
+              onClick={[Function]}
+            >
+              terms-of-use
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

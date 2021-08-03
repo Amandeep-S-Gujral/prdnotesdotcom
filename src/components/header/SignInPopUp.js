@@ -7,15 +7,9 @@ import { signInMethods } from '../../systemConfig'
 
 import '../../css/signInPopUp.css'
 
-const SignInPopUp = ({ setState }) => {
+const SignInPopUp = () => {
 
     const cookies = new Cookies()
-
-    //close the PopUp on click of close button
-    let handleClose = () => {
-        document.getElementById('signInPopUp').style.display = "none"
-        return setState(false)
-    }
 
     //login user
     let handleClick = (e) => {
@@ -27,16 +21,15 @@ const SignInPopUp = ({ setState }) => {
             })
             .then(user => user.getIdToken())
             .then(token => cookies.set('authToken', token, {path: '/'}))
-            .then(() => setState(false))
+            .then(() => window.location.reload())
             .catch(error => window.alert(error.message))
     }
 
     return (
         <div id="signInPopUp">
             <div>
-                <header><h2>Choose Your SignIn Provider </h2>
-                    <button className="closeBtn" onClick={handleClose}>X</button></header>
-
+                <header><h2>Choose Your SignIn Provider </h2></header>
+                
                 {/*render buttons based on the signIn methods saved in system config */}
                 {signInMethods.map((obj, index) => <div className="signInDiv" key={index}>
                     <button className="signInBtn" onClick={handleClick} value={obj.method}>

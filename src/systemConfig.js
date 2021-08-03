@@ -3,14 +3,14 @@ let navList = [
     'book'
 ]
 
-let ftrList = [
+let footerList = [
     'privacy-policy',
     'terms-of-use'
 ]
 
-let baseUrl = 'https://us-central1-prdnotesdotcom.cloudfunctions.net/app/api'
+// const baseUrl = 'https://us-central1-prdnotesdotcom.cloudfunctions.net/app/api'
 
-// let baseUrl = 'http://localhost:5001/prdnotesdotcom/us-central1/app/api'
+const baseUrl = "http://localhost:5001/prdnotesdotcom/us-central1/app/api"
 
 let signInMethods = [
     {
@@ -31,4 +31,4 @@ let signInMethods = [
     }
 ]
 
-export { navList, ftrList, baseUrl, signInMethods }
+export { navList, footerList, baseUrl, signInMethods }

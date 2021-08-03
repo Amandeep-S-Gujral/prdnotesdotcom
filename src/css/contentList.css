@@ -1,15 +1,15 @@
 .articleDisplay{
-  padding: 55% 0% 5% 5%;
+  padding: 30% 0% 5% 5%;
 }
 
 .bookDisplay {
-  padding: 50% 0% 5% 5%;
+  padding: 25% 0% 5% 5%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .loading{
-  padding: 55% 0% 5% 5%;
+  padding: 30% 0% 5% 5%;
 }
 
 .listLink {

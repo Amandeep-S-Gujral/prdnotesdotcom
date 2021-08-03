@@ -1,16 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import {ftrList} from '../../systemConfig'
+import {footerList} from '../../systemConfig'
 
 import '../../css/footer.css'
 
 const Footer = () =>{
     return(
-        <div className="footer">
+        <div id="footer">
             <ul>
-                {ftrList.map(val =><li key={val}>
-                    <Link className="footerLink" to={`/${val}`}>{val.replaceAll('-',' ')}</Link>
+                {footerList.map(val =><li key={val}>
+                    <Link className="link2" to={`/${val}`}>{val}</Link>
                 </li>)}
             </ul>
 

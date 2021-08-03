@@ -23,8 +23,12 @@
     font-weight: 700;
     color: #052775;
   }
-  
-  .signIn {
+
+  #signIn:hover #signInPopUp{
+    display: block;
+  }
+
+  #signOut {
     height: 30px;
     font-weight: 700;
     color: #052775;

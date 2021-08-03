@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
-import { Content } from '../../dispatcher/content'
-
 import renderBook from '../../modifiers/renderBook'
 
 import CommentBox from '../comment/CommentBox'
@@ -16,11 +14,11 @@ const BookPage = () => {
     let { cid } = useParams()
     let [data, setData] = useState()
 
-    const content = new Content('GET', 'books', cid)
+    // const content = new Content('GET', 'books', cid)
 
-    useEffect(() => {
-        content.getContentBdy(setData)
-    }, [cid])
+    // useEffect(() => {
+    //     content.getContentBdy(setData)
+    // }, [cid])
 
     return (
         <div className="display">

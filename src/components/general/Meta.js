@@ -5,7 +5,6 @@ const Meta = ({obj}) => {
     return (
         <Helmet>
             {/* general tags */}
-            <title>PrdNotes.com</title>
             <meta name="title" content={obj.tle} />
             <meta name="description" content={obj.des} />
 

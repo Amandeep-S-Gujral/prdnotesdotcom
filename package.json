@@ -23,7 +23,8 @@
     "universal-cookie": "^4.0.4"
   },
   "reactSnap": {
-    "inlineCss": true
+    "inlineCss": true,
+    "headless": false
   },
   "scripts": {
     "start": "react-scripts start",

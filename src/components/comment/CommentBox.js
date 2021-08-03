@@ -42,7 +42,7 @@ let CommentBox = ({ cid }) => {
 
     return (
         <div>
-            <div className="commentBox">
+            <div id="commentBox" className="commentBox">
                 <textarea placeholder="Share your opinion..." value={bdy} onChange={handleChange}></textarea>
                 <div>
 

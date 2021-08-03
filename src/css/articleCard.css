@@ -9,6 +9,7 @@
   padding: 0px;
   border-color: #052775 ;
   box-shadow: 3px 3px 5px grey;
+  margin-left: 5vw;
 }
 .articleCard:hover {
   cursor: pointer;
