@@ -11,7 +11,7 @@ const WithContentData = (container) => {
 
         async componentDidMount() {
             let data = await container.contentDispatcher().getContentBodyByCid(this.state.cid)
-            this.setState({data})
+            this.setState({ data })
         }
 
         render() {
@@ -26,9 +26,9 @@ const WithContentData = (container) => {
             return (
                 <>
                     <container.Header />
-                    <container.SocialBar container={container}/>
+                    <container.SocialBar container={container} />
                     <div className="display">
-                    <container.Page container={container} data={JSON.parse(this.state.data.bdy)} />
+                        <container.Page container={container} type={this.props.type} data={JSON.parse(this.state.data.bdy)} />
                     </div>
                     <container.Footer />
                 </>

@@ -1,0 +1,26 @@
+.bar2{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 98px;
+    background-color: lightgray;
+    width: 100vw;
+    height: 40px;
+    box-shadow: 2px 2px 2px gray;
+  }
+
+  @media only screen and (min-width: 600px){
+    .bar2{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 80px;
+        background-color: lightgray;
+        width: 100vw;
+        height: 40px;
+        box-shadow: 2px 2px 2px gray;
+        padding-left: 20px;
+      }
+  }

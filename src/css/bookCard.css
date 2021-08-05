@@ -1,8 +1,9 @@
 .bookCard {
-  margin-top: 10%;
+  margin-top: 5%;
   background-color: lightgoldenrodyellow;
   text-align: center;
   width: 90vw;
+  box-shadow: 3px 3px 5px grey;
 }
 
 .bookCard img {
@@ -25,10 +26,12 @@
 
 @media only screen and (min-width: 600px) {
   .bookCard {
-    margin: 5%;
     background-color: lightgoldenrodyellow;
     text-align: center;
     width: 22vw;
+    box-shadow: 3px 3px 5px grey;
+    margin-top: 0%;
+    margin-bottom: 2%;
   }
 
   .bookCard img {

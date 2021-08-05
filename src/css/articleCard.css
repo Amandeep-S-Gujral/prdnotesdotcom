@@ -9,7 +9,6 @@
   padding: 0px;
   border-color: #052775 ;
   box-shadow: 3px 3px 5px grey;
-  margin-left: 5vw;
 }
 .articleCard:hover {
   cursor: pointer;
@@ -33,11 +32,10 @@
   .articleCard {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1.5%;
-    margin-bottom: 0%;
     width: 50vw;
     height: 25vh;
-    padding: 0px;
+    margin-top: 0%;
+    margin-bottom: 1.5%;
   }
   .articleCard img {
     width: 44%;

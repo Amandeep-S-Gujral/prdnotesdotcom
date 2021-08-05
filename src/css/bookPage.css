@@ -1,9 +1,6 @@
-.display{
-    padding: 50% 0% 0% 5%;
-}
-
 .book{
     width: 90%;
+    padding-left: 4vw;
 }
 
 .tle{
@@ -106,12 +103,9 @@
 
 @media only screen and (min-width: 600px) {
     /*for desktop*/
-    .display{
-        padding: 7% 0% 2% 3%;   
-    }
-
     .book{
         display:grid;
+        padding-left: 30px;
         grid-template-columns: 300px 500px;
         grid-template-rows: auto auto auto auto;
     }

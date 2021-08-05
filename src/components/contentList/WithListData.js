@@ -33,7 +33,7 @@ const WithListData = (container) => {
                     <div className='display'>
                         {this.state.data && <div>
                             {this.state.data.map(obj =>
-                                <a href={`${this.state.url}/${obj.cid}`} >
+                                <a className = "linkNoDecoration"href={`${this.state.url}/${obj.cid}`} >
                                     <container.DisplayCard obj={obj} />
                                 </a>
                             )}
