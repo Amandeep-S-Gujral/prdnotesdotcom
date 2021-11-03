@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Share from '../general/Share'
 
 import '../../css/bookCard.css'
@@ -7,10 +6,10 @@ import '../../css/bookCard.css'
 const BookCard = ({obj}) => {
     return(
         <div className="bookCard">
-            <img src ={obj.img} alt="book cover" />
+            <img src ={obj.image} alt="book cover" />
             <div>
-                <p className="lstTle">{obj.tle} ({obj.subTle})</p>
-                <p className="cat">Category: {obj.cat}</p>
+                <p className="lstTle">{obj.title} ({obj.subTitle})</p>
+                <p className="cat">Category: {obj.category}</p>
                 <Share url='https://www.prdnotes.com/book' />
             </div>
         </div>

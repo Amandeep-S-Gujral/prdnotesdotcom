@@ -14,6 +14,7 @@ const WithListData = (container) => {
         async componentDidMount() {
             await container.apiRequestModel().setHttpMethod('GET')
             let data = await container.contentDispatcher().getContentListByType(this.state.type)
+            console.log(data)
             this.setState({ data: [...data] })
         }
 

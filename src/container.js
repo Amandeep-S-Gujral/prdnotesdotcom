@@ -11,7 +11,7 @@ class Container {
     }
 
     setExternalModule(name, module){
-        this[name] = () => module
+        this[name] = module
     }
 
     setUrl(name, url){

@@ -20,7 +20,7 @@ class ApiRequestModel {
         throw new Error('invalid http method')
     }
 
-    setAuthorization(token) {
+    setAuth(token) {
         this.authorization = token
     }
 
@@ -30,6 +30,11 @@ class ApiRequestModel {
             return this
         }
         throw new Error('invalid request body object')
+    }
+
+    setBodyNull(){
+        this.body = null
+        return this
     }
 }
 

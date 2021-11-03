@@ -12,7 +12,6 @@
 }
 .articleCard:hover {
   cursor: pointer;
-  border-color: grey;
   border-width: 2px;
 }
 .articleCard img {
@@ -32,13 +31,13 @@
   .articleCard {
     display: flex;
     flex-wrap: wrap;
-    width: 50vw;
+    width: 70vw;
     height: 25vh;
     margin-top: 0%;
     margin-bottom: 1.5%;
   }
   .articleCard img {
-    width: 44%;
+    width: 30%;
     height: auto;
   }
   .articleCard div {

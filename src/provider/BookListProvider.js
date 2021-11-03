@@ -1,6 +1,6 @@
 import Container from "../container";
 
-import contentDispatcherFactory from "../dispatcher/contentDispatcher";
+import contentListDispatcherFactory from "../dispatcher/contentListDispatcher";
 import apiRequestModelFactory from "../model/apiRequestModel";
 import { baseUrl } from "../systemConfig";
 
@@ -13,7 +13,7 @@ import WithListData from "../components/contentList/WithListData";
 
 const container = new Container()
 
-container.setInternalModule('contentDispatcher', contentDispatcherFactory)
+container.setInternalModule('contentDispatcher', contentListDispatcherFactory)
 container.setInternalModule('apiRequestModel', apiRequestModelFactory)
 container.setUrl('baseUrl', baseUrl)
 

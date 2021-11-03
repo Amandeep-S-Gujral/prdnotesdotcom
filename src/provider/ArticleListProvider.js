@@ -1,7 +1,7 @@
 import Container from "../container";
 
 import {Link} from 'react-router-dom'
-import contentDispatcherFactory from "../dispatcher/contentDispatcher";
+import contentListDispatcherFactory from "../dispatcher/contentListDispatcher";
 import apiRequestModelFactory from "../model/apiRequestModel";
 import { baseUrl } from "../systemConfig";
 
@@ -16,7 +16,7 @@ const container = new Container()
 
 container.setExternalModule('Link', Link)
 
-container.setInternalModule('contentDispatcher', contentDispatcherFactory)
+container.setInternalModule('contentDispatcher', contentListDispatcherFactory)
 container.setInternalModule('apiRequestModel', apiRequestModelFactory)
 container.setUrl('baseUrl', baseUrl)
 

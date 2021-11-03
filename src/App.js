@@ -15,8 +15,8 @@ const App = () => {
       <Router forceRefresh={true}>
         <Switch>
           <Route exact path="/"><Home /></Route>
-          <Route path="/privacy-policy" render={routeProps => <WebPolicy />} />
-          <Route path="/terms-of-use" render={routeProps => <WebPolicy />} />
+          <Route path="/privacy-policy" render={() => <WebPolicy />} />
+          <Route path="/terms-of-use" render={() => <WebPolicy />} />
           <Route exact path="/article" render={routeProps => <ArticleList type="article" {...routeProps} />} />
           <Route exact path="/book" render={routeProps => <BookList type="book" {...routeProps} />} />
           <Route path="/article/:cid" render={routeProps => <ArticlePage type="article" {...routeProps} />} />

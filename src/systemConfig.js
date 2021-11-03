@@ -8,9 +8,9 @@ let footerList = [
     'terms-of-use'
 ]
 
-// const baseUrl = 'https://us-central1-prdnotesdotcom.cloudfunctions.net/app/api'
+// const baseUrl = 'https://us-central1-prdnotesdotcom.cloudfunctions.net/app/api/'
 
-const baseUrl = "http://localhost:5001/prdnotesdotcom/us-central1/app/api"
+const baseUrl = "http://localhost:5001/prdnotesdotcom/us-central1/app/api/"
 
 let signInMethods = [
     {

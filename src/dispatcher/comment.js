@@ -1,5 +1,5 @@
 import { baseUrl } from '../systemConfig'
-import commentSorter from '../modifiers/commentSorter'
+import commentSorter from '../utils/commentSorter'
 
 export class Comment {
     constructor(method, cid, typ, bdy, lnk, tkn) {

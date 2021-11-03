@@ -5,13 +5,15 @@ const WithContentData = (container) => {
         constructor(props) {
             super(props)
             this.state = {
-                cid: this.props.match.params.cid
+                cid: this.props.match.params.cid,
+                url: "https://prdnotes.com" + this.props.match.url
             }
         }
 
         async componentDidMount() {
-            let data = await container.contentDispatcher().getContentBodyByCid(this.state.cid)
-            this.setState({ data })
+            let res = await container.contentDispatcher().getContentBodyByCid(this.state.cid)
+            const data = res.pop()
+            this.setState({data})
         }
 
         render() {
@@ -25,10 +27,14 @@ const WithContentData = (container) => {
             }
             return (
                 <>
+                {console.log(this.state)}
                     <container.Header />
-                    <container.SocialBar container={container} />
+                    <container.SocialBar container={container} data={this.state.data} />
                     <div className="display">
-                        <container.Page container={container} type={this.props.type} data={JSON.parse(this.state.data.bdy)} />
+                        <container.Page container={container} data={this.state.data} />
+                        <h3>Share</h3>
+                        <container.Share url={this.state.url} />
+                        <container.CommentBox cid={this.state.cid} />
                     </div>
                     <container.Footer />
                 </>

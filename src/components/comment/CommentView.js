@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import unixToUtc from '../../modifiers/unixToUtc'
+import unixToUtc from '../../utils/unixToUtc'
 import ReplyBox from './ReplyBox'
 
 import '../../css/commentView.css'
