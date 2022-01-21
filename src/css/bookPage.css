@@ -1,228 +1,142 @@
-.book{
-    width: 90%;
-    padding-left: 4vw;
+.bookPage{
+    padding-top: 2vh;
+    width: 90vw;
 }
 
-.tle{
+.title{
+    display: block;
     font-size: 24px;
     color: #052775;
-    margin: 2px;
 }
 
-.subTle{
+.subTitle{
     font-size: 18px;
     color: #052775;
-    margin: 2px;
 }
 
-#bokImgDisplay{
+.bookCover{
     width: 60%;
     padding: 5% 0% 0% 20%;
 }
 
-.bokImgBtn{
+.bookCoverButton{
     padding: 2% 0% 2% 0%;
 }
 
-.bokImgBtn img{
-    width: 50px
-}
-
-.bokImgBtn img{
+.bookCoverButton img{
     width: 50px;
     padding: 5px;
 }
 
-.bokImgBtn img:hover{
+.bookCoverButton img:hover{
     cursor: pointer;
     background-color: lightgrey;
 }
 
-.str{
-    grid-row: 2;
-    grid-column: 2;
+.store{
     border-top: 1.5px solid lightgray;
-    padding-top: 1%;
+    padding: 5% 0% 5% 0%;
+    overflow-x: scroll;
 }
 
-.strBtn{
-    height: 30px;
-    font-weight: 700;
-    color:#052775;
-}
-
-.strLst{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.str:hover .strLst{
-    display: block;
-}
-
-.strLst ul{
-    list-style: none;
-    padding: 0px;
-}
-
-.strLst ul li{
-    margin: 20px;
-}
-
-.strLnk {
+.storeButton{
     text-decoration: none;
-    color: #052775;
-    font-weight: bolder;
-    padding: 10px 2px 10px 2px;
-}
-
-.strLnk:hover{
     background-color: lightgray;
+    color:#052775;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: grey 2px 2px 2px;
 }
 
-.aut{
+.storeButton:hover{
+    background-color: #fefb7a;
+}
+
+.detail{
     border-top: 1.5px solid lightgray;
-    margin-top: 2%;
 }
 
-.brf{
-    margin-top: 2%;
+.brief{
     border-top: 1.5px solid lightgray;
     text-align: justify;
 }
 
-.brf label{
-    margin-top: 2%;
-}
-
-.brf p{
-    margin-top: 2%;
-}
-
 @media only screen and (min-width: 600px) {
     /*for desktop*/
-    .book{
+    .bookPage{
+        width: 90vw;
+        padding-top: 5vh;
         display:grid;
-        padding-left: 30px;
         grid-template-columns: 300px 500px;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
     }
 
-    .tle{
+    .title{
         color: #052775;
         grid-row: 1;
         grid-column: 2;
     }
 
-    .subTle{
+    .subTitle{
         color: #052775;
         grid-row: 1;
         grid-column: 2;
-        padding-top: 10%;
+        padding-top: 10%;  
     }
 
-    .bokImg{
+    .bookCover{
         grid-column: 1;
-        grid-row: 1/span4;
-    }
-
-    #bokImgDisplay{
+        grid-row: 1/span 3;
         width: 80%;
-        padding-left: 0px;
+        padding: 0px;
     }
 
-    .bokImgBtn img{
+    .bookCoverButton{
+        padding: 2% 0% 2% 0%;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .bookCoverButton img{
         width: 50px;
         padding: 5px;
     }
 
-    .bokImgBtn img:hover{
+    .bookCoverButton img:hover{
         cursor: pointer;
         background-color: lightgrey;
     }
 
-    .str{
+    .store{
         grid-row: 2;
         grid-column: 2;
         border-top: 1.5px solid lightgray;
-        padding-top: 1%;
+        overflow-x: scroll;
     }
 
-    .strBtn{
-        height: 30px;
-        font-weight: 700;
-        color:#052775;
-    }
-
-    .strLst{
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-
-    .str:hover .strLst{
-        display: block;
-    }
-
-    .strLst ul{
-        list-style: none;
-        padding: 0px;
-    }
-
-    .strLst ul li{
-        margin: 20px;
-    }
-
-    .strLnk {
+    .storeButton{
         text-decoration: none;
-        color: #052775;
-        font-weight: bolder;
-        padding: 10px 2px 10px 2px;
+        background-color: lightgray;
+        color:#052775;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: grey 2px 2px 2px;
     }
 
-    .strLnk:hover{
-        background-color: lightgray;
+    .storeButton:hover{
+        background-color: #fefb7a;
     }
-    
-    .aut{
+
+    .detail{
         grid-row: 3;
         grid-column: 2;
         border-top: 1.5px solid lightgray;
-        margin-top: 2%;
     }
 
-    .lag{
-        grid-row: 3;
+    .brief{
+        grid-column: 5;
         grid-column: 2;
-        margin-top: 7%;
-    }
-
-    .pub{
-        grid-row: 3;
-        grid-column: 2;
-        margin-top: 12%
-    }
-
-    .pgs{
-        grid-row: 3;
-        grid-column: 2;
-        margin-top: 17%
-    }
-
-    .brf{
-        margin-top: 2%;
         border-top: 1.5px solid lightgray;
         text-align: justify;
-    }
-
-    .brf label{
-        margin-top: 2%;
-    }
-
-    .brf p{
-        margin-top: 2%;
     }
 }

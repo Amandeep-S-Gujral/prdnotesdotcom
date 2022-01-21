@@ -29,16 +29,15 @@ const WithListData = (container) => {
             }
             return (
                 <>
-                {console.log(this.state.url)}
                     <container.Header />
                     <div className='display'>
-                        {this.state.data && <div>
-                            {this.state.data.map(obj =>
-                                <a className = "linkNoDecoration"href={`${this.state.url}/${obj.cid}`} >
+                        {this.state.data && <>
+                            {this.state.data.map((obj, index) =>
+                                <a className="linkNoDecoration" key={index} href={`${this.state.url}/${obj.cid}`} >
                                     <container.DisplayCard obj={obj} />
                                 </a>
                             )}
-                        </div>}
+                        </>}
                     </div>
                     <container.Footer />
                 </>

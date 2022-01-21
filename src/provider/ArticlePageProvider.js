@@ -13,7 +13,7 @@ import SocialAttributeButton from "../components/socialAttribute/SocialAttribute
 import CommentBox from '../components/comment/CommentBox'
 import Share from '../components/general/Share'
 
-import {renderFactory} from "../utils/renderArticle"
+import {renderFactory} from "../utils/render"
 import WithContentData from "../components/contentPage/WithContentData";
 
 import draftToHtml from 'draftjs-to-html'

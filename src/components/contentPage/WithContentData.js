@@ -6,14 +6,25 @@ const WithContentData = (container) => {
             super(props)
             this.state = {
                 cid: this.props.match.params.cid,
-                url: "https://prdnotes.com" + this.props.match.url
+                url: "https://prdnotes.com" + this.props.match.url,
             }
+            this.handleBookCoverChange = this.handleBookCoverChange.bind(this)
         }
 
         async componentDidMount() {
             let res = await container.contentDispatcher().getContentBodyByCid(this.state.cid)
             const data = res.pop()
-            this.setState({data})
+            if (data.type === 'book') {
+                let bookCover = JSON.parse(data.detail).frontImage
+                this.setState({ data, bookCover })
+                return
+            }
+            this.setState({ data })
+        }
+
+        handleBookCoverChange = (e) => {
+            const bookCover = e.target.src
+            this.setState({ bookCover })
         }
 
         render() {
@@ -25,16 +36,22 @@ const WithContentData = (container) => {
                     </>
                 )
             }
+
             return (
                 <>
-                {console.log(this.state)}
                     <container.Header />
                     <container.SocialBar container={container} data={this.state.data} />
                     <div className="display">
-                        <container.Page container={container} data={this.state.data} />
-                        <h3>Share</h3>
-                        <container.Share url={this.state.url} />
-                        <container.CommentBox cid={this.state.cid} />
+                        <container.Page
+                            container={container}
+                            data={this.state.data}
+                            bookCover={this.state.bookCover}
+                            handleChange={this.handleBookCoverChange} />
+                        <div>
+                            <h3>Share</h3>
+                            <container.Share url={this.state.url} />
+                            <container.CommentBox cid={this.state.cid} />
+                        </div>
                     </div>
                     <container.Footer />
                 </>

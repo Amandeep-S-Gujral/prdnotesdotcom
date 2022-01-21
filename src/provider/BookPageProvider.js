@@ -7,26 +7,32 @@ import { baseUrl } from "../systemConfig";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import Loading from "../components/general/Loading";
-// import Page from "../components/contentPage/Page"
+import Page from "../components/contentPage/BookPage"
 import SocialBar from "../components/socialAttribute/SocialBar";
 import SocialAttributeButton from "../components/socialAttribute/SocialAttributeButton";
 import CommentBox from "../components/comment/CommentBox";
 import Share from "../components/general/Share";
 
-import renderBook from "../utils/renderBook"
+import { renderFactory } from "../utils/render";
 import WithContentData from "../components/contentPage/WithContentData";
+
+import draftToHtml from 'draftjs-to-html'
+import parser from "html-react-parser";
 
 const container = new Container()
 
+container.setExternalModule('draftToHtml', draftToHtml)
+container.setExternalModule('htmlReactParser', parser)
+
 container.setInternalModule('contentDispatcher', contentBodyDispatcherFactory)
+container.setInternalModule('render', renderFactory)
 container.setInternalModule('apiRequestModel', apiRequestModelFactory)
 container.setUrl('baseUrl', baseUrl)
 
 container.setComponent('Header', Header)
 container.setComponent('Footer', Footer)
 container.setComponent('Loading', Loading)
-// container.setComponent('Page', Page)
-container.setComponent('render', renderBook)
+container.setComponent('Page', Page)
 container.setComponent('SocialBar', SocialBar )
 container.setComponent('SocialAttributeButton', SocialAttributeButton)
 container.setComponent('CommentBox', CommentBox)

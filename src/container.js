@@ -1,6 +1,4 @@
 class Container {
-    constructor(){
-    }
 
     setInternalModule(name, module){
         this[name] = () => module(this)

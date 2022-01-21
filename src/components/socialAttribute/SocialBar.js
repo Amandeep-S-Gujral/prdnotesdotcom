@@ -26,7 +26,6 @@ class SocialBar extends React.Component {
     render() {
         return (
             <>
-            {console.log(this.state.data)}
                 <div className="bar2">
                     <this.props.container.SocialAttributeButton data={this.state.data} handleClick={this.handleClick} />
                 </div>

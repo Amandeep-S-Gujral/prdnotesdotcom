@@ -20,6 +20,7 @@
 
 .linkNoDecoration{
   text-decoration: none;
+  padding: 10px;
 }
 
 .text1 {
@@ -37,13 +38,21 @@
 }
 
 .display {
-  padding: 40% 0% 2% 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15vh 0 0 3vw;
 }
 
 @media only screen and (min-width: 600px) {
   .display{
-    padding: 10% 0% 0% 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15vh 0 0 2vw;
+    width: auto;
+    max-width: 70vw;
+
   }
 }
 
-@import '../css/articlePage.css'
+@import '../css/articlePage.css';
+@import '../css/bookPage.css'

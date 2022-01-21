@@ -35,7 +35,7 @@ let NavBar = () => {
 
         {/* hardCoded links */}
         <li>
-          <a className="link1" href='https://forms.gle/vG3r8vpLoD1qh7PbA' target='_blank'>Feedback Form</a>
+          <a className="link1" href='https://forms.gle/vG3r8vpLoD1qh7PbA' target='_blank' rel="noreferrer">Feedback Form</a>
         </li>
       </ul>
     </div>
